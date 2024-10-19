@@ -46,7 +46,16 @@ def spell_check(words, dictionary):
             i+=1
             if incorrect_words_list[incorrect_word] == current_word:
                 incorrect_words_indices.append(i)
-                
+
+    #This formats the output to replace blank variables with "N/A"
+    if incorrect_word_indices = [] :
+        incorect_word_indices = "N/A"
+    if incorrect_words = [] :
+        incorrect_words = "N/A"
+    if correct_words = [] :
+        correct_words = "N/A"
+
+    
     #Output
     print("Incorrect words:", incorrect_words)
     print("Incorrect words indices: ", incorrect_words_indices)
