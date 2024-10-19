@@ -1,0 +1,19 @@
+
+
+
+list_dictionary = list(dictionary)
+for iww in incorrect_words:
+    iww = 0
+    # This is the counter for dictionary list
+    correct_words_index = 0
+    threshold = levendist(iww, dictionary[0])
+    index_threshold = 0
+
+    for correct_words in dictionary:
+        dict_distance = levendist(iww, dictionary[correct_words_index])
+        if dict_distance < threshold :
+            threshold = dict_distance
+            index_threshold = correct_words_index
+
+        correct_words_index = correct_words + 1
+
